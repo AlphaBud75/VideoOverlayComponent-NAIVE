@@ -26,12 +26,22 @@ video {
     position: absolute;
 }
 
-#mute_button {
+#audio_controls_div {
+    position: absolute;
     top: 0%;
     left: 0%;
     font-size: 18px;
     padding: 10px;
-    background: green;
+    cursor: pointer;
+}
+
+#mute_button {
+    top: 90%;
+    left: 0%;
+    font-size: 18px;
+    padding: 10px;
+    background: transparent;
+    border: none;
     color: #fff;
     cursor: pointer;
 }

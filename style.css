@@ -1,0 +1,52 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+body {
+    background-color: black;
+}
+
+div.container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: -10px;
+    /* border: 10px solid green; */
+}
+
+video {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add some content at the bottom of the video/page */
+
+.mute_button {
+    bottom: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    position: absolute;
+}
+
+
+/* Style the button used to pause/play the video */
+
+#mute_button {
+    /* top: 0%;
+    left: 0%;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer; */
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}

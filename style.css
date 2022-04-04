@@ -20,33 +20,34 @@ video {
     padding: 0;
 }
 
-
-/* Add some content at the bottom of the video/page */
-
-.mute_button {
-    bottom: 50%;
-    left: 50%;
+.control_button button {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     position: absolute;
 }
 
-
-/* Style the button used to pause/play the video */
-
 #mute_button {
-    /* top: 0%;
+    top: 0%;
     left: 0%;
-    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+#play_button {
+    bottom: 50%;
+    left: 50%;
     font-size: 18px;
     padding: 10px;
     border: none;
-    background: #000;
+    background: red;
     color: #fff;
-    cursor: pointer; */
+    cursor: pointer;
 }
 
-#myBtn:hover {
-    background: #ddd;
-    color: black;
+button.control_button:hover {
+    background: gray;
+    color: green;
 }

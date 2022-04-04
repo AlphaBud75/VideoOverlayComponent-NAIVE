@@ -9,37 +9,44 @@
 
     <div class="container">
         asdfasdf
-        <video autoplay loop id="myVideo">
+        <video autoplay muted loop id="myVideo">
         <source src="ENNA200k.mp4" type="video/mp4">
       </video>
 
 
-        <!-- Optional: some overlay text to describe the video -->
-        <div class="mute_button">
-            <!-- Use a button to pause/play the video with JavaScript -->
-            <button id="mute_button" onclick="myFunction()">Play/Pause</button>
+        <div class="control_button">
+            <button id="mute_button" onclick="mute_toggle()">Unmute</button>
+            <button id="play_button" onclick="pause_toggle()">Pause</button>
         </div>
 
     </div>
 
 
     <script>
-        // Get the video
         var video = document.getElementById("myVideo");
+        var play_button = document.getElementById("play_button");
+        var mute_button = document.getElementById("mute_button");
 
-        // Get the button
-        var btn = document.getElementById("myBtn");
-
-        // Pause and play the video, and change the button text
-        function myFunction() {
+        function pause_toggle() {
             if (video.paused) {
                 video.play();
-                btn.innerHTML = "Pause";
+                play_button.innerHTML = "Play";
             } else {
                 video.pause();
-                btn.innerHTML = "Play";
+                play_button.innerHTML = "Pause";
             }
         }
+
+        function mute_toggle() {
+            if (video.muted == false) {
+                video.muted = true;
+                mute_button.innerHTML = "Unmute";
+            } else {
+                video.muted = false;
+                mute_button.innerHTML = "Mute";
+            }
+
+        };
     </script>
 </body>
 
